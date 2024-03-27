@@ -5,6 +5,14 @@
 // 3. если вместо массива пришел null, метод вернет -3
 
 
-public class task2 {
-    
+public class task2{
+    public static void main(String[] args) {
+       int[] ar = new int[2];
+       System.out.println(getArrayLenght(ar, 3));
+   }
+   public static int getArrayLenght(int[] arr,int min){
+       if(arr.length<min) return-1;
+       return arr.length;
+
+   }
 }
